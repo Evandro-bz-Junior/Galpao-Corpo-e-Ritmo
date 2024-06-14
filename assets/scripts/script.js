@@ -32,8 +32,8 @@ sr.reveal(`.about-img-area, .team-desc-area, .home-desc-area`,{origin:'left'})
 sr.reveal(`.popular__card`,{interval: 200}) */
 
 sr.reveal(`.activities .title`)
-sr.reveal(`.about .img-area, .team .desc-area`,{origin:'left'})
-sr.reveal(`.about .desc-area, .team .img-area`,{origin:'right'})
+sr.reveal(`.home .desc-area, .about .img-area, .team .desc-area`,{origin:'left'})
+sr.reveal(` .home .img-area, .about .desc-area, .team .img-area`,{origin:'right'})
 sr.reveal(`.activity-1, .activity-2, .activity-3`,{origin:'right',interval: 300})
 sr.reveal(`.contact, .follow, .location`,{interval: 200})
 
