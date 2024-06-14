@@ -85,15 +85,11 @@ header img {
     font-style: italic;
     margin-top: -50px;
     text-shadow: 3px 2px 5px #1e1e1e;
-    text-transform: uppercase;
-    animation: slideBottom 1s ease forwards;
-    animation-delay: .7s;
+    text-transform: uppercase; 
 }
 
 .home .desc {
-    font-size: 1rem;
-    animation: slideRight 1s ease forwards;
-    animation-delay: 1s;
+    font-size: 1rem; 
 }
 
 .home .img-area {
@@ -119,9 +115,7 @@ header img {
     border: none;
     background-color: var(--button-color);
     color: var(--text-color);
-    cursor: pointer;
-    animation: slideLeft 1s ease forwards;
-    animation-delay: 1s;
+    cursor: pointer; 
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -344,7 +338,7 @@ footer .location {
     gap: 20px;
 }
 
-.about .img-area, .about .desc-area, .activities .title, .activity,.activity-1, .activity-2, .activity-3 .team .desc-area, .team .img-area, .contact, .follow, .location{
+.home .desc-area, .home .img-area,.about .img-area, .about .desc-area, .activities .title, .activity,.activity-1, .activity-2, .activity-3 .team .desc-area, .team .img-area, .contact, .follow, .location{
     visibility: hidden;
 }
 
