@@ -15,6 +15,11 @@
     --button-color: #1E1E1E;
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -104,8 +109,6 @@ header img {
     top: 15px;
     right: 10px;
     filter: drop-shadow(2px 1px 5px #333);
-    animation: floatImage 4s ease infinite;
-    animation-delay: 3s;
 }
 
 .home .btn {
@@ -342,63 +345,10 @@ footer .location {
     visibility: hidden;
 }
 
-/* animations */
-
-@keyframes floatImage {
-    0% {
-        transform: translateX(0);
-    }
-
-    50% {
-        transform: translateX(-24px);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-
-@keyframes slideRight {
-    0% {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideLeft {
-    0% {
-        transform: translateX(100px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-
-@keyframes slideBottom {
-    0% {
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
 
 /*Responsive*/
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 780px) {
 
     /* Estilos para tablets */
     header {
@@ -427,6 +377,9 @@ footer .location {
 
     .home .desc {
         font-size: 0.8rem;
+    }
+    .home .img-area{
+        width: 500px;
     }
 
     .home .img-area img {
@@ -597,7 +550,7 @@ footer .location {
         left: 0;
         width: 100%;
         backdrop-filter: blur(24px);
-        background-color: #7c3b706b;
+        background-color: #7c3b70b5;
         z-index: 10;
         display: none;
     }
@@ -675,6 +628,7 @@ footer .location {
         display: flex;
         align-items: center;
         gap: 15px;
+        width: 300px;
     }
 
     .about .title {
@@ -741,24 +695,27 @@ footer .location {
 
     .team .img-area {
         display: flex;
-        width: 400px;
+        width: 100vw;
         height: 250px;
         position: relative;
+        justify-content: flex-start;
     }
 
     .team .img1 {
         position: relative;
         width: 400px;
         height: 270px;
-        right: 30px;
+        right: -30px;
         bottom: 20px;
+        width: 90vw;
     }
 
     .team .img2 {
-        position: absolute;
+        /* position: absolute;
         width: 310px;
         height: 250px;
-        left: 120px;
+        left: -280px; */
+        display: none;
     }
 
     footer {
