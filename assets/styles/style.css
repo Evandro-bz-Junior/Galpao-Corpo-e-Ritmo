@@ -38,6 +38,11 @@ header img {
     height: 80px; 
 }
 
+main {
+    overflow: hidden;
+    /* For animation ScrollReveal */
+}
+
 .nav-links {
     height: 100px;
     display: flex;
@@ -341,9 +346,9 @@ footer .location {
     gap: 20px;
 }
 
-.home .desc-area, .home .img-area,.about .img-area, .about .desc-area, .activities .title, .activity,.activity-1, .activity-2, .activity-3 .team .desc-area, .team .img-area, .contact, .follow, .location{
+/* .home .desc-area, .home .img-area,.about .img-area, .about .desc-area, .activities .title, .activity,.activity-1, .activity-2, .activity-3 .team .desc-area, .team .img-area, .contact, .follow, .location{
     visibility: hidden;
-}
+} */
 
 
 /*Responsive*/
